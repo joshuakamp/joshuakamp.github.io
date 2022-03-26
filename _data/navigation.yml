@@ -1,5 +1,5 @@
 main:
-  - title: "Test page"
-    url: /test/
-  - title: "Tags"
+  - title: "ALL POSTS"
+    url: ""
+  - title: "POSTS BY TAG"
     url: /tags/
