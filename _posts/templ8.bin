@@ -1,0 +1,23 @@
+# name of file in _posts should be: YYYY-MM-DD-NAMEOFURL.md
+
+---
+title: "TITLE OF BLOG POST"
+tags:
+  - test
+---
+
+# add a notice: 
+**Note:** Do you disagree with the content of this post? Or do you feel like something is missing? Then please send me an e-mail or a message on Linkedin. I am always open to feedback and I love learning new things.
+{: .notice}
+
+# code snippet example:
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+
+# quote block example: " > Only one thing is impossible for God: To find any sense in any copyright law on the planet. "
+# citing example: " > <cite><a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">Mark Twain</a></cite> "
