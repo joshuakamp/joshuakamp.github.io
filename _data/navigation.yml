@@ -1,5 +1,3 @@
 main:
-  - title: "ALL POSTS"
-    url: ""
   - title: "POSTS BY TAG"
     url: /tags/
