@@ -23,28 +23,25 @@ After copying itself into these ADS, it deletes the more obvious .exe file in wh
 
 ## How to hide data in Alternate Data Streams
 Let's take a look at the following simple text file:
-
-![A simple text file.](/assets/images/ads-1-simpletextfile.png)
+![A simple text file.](/assets/images/simpletextfile.png)
 
 If we open a new PowerShell window and run the <code>Get-Item simple.txt -Stream *</code> command, we can see that there is only one stream called :$DATA. 
-
-![Default :$DATA stream](/assets/images/ads-2-psstream.png)
+![Default :$DATA stream](/assets/images/psstream.png)
 As mentioned before, the name of this default stream is empty and it contains the main content of the file. 
 
 Now what if we wanted to store some secret text in our simple text file? We could do that by creating a new ADS with the following PowerShell command: <br>
 <code>Set-Content .\simple.txt -Value "42 is the answer to the Ultimate Question of Life, the Universe, and Everything." -Stream MyHiddenStream</code><br>
 This command will create a new ADS named "MyHiddenStream" in our simple text file. Let's display the streams again with the command that we used earlier:
-
-![Display ADS in PowerShell](/assets/images/ads-3-psstream2.png)
+![Display ADS in PowerShell](/assets/images/psstream2.png)
 
 We can also view ADS in a Windows command prompt by using the <code>dir /r</code> command:
-![dir /r](/assets/images/ads-4-dir.png)
+![dir /r](/assets/images/dir.png)
 
 If we open our simple text file again in notepad, the content is still the same:
-![Content of simple text file](/assets/images/ads-5-simpletextfile2.png)
+![Content of simple text file](/assets/images/simpletextfile2.png)
 
 So how do we view the secret text that we just entered? Well, we'd have to call the ADS to view this text. We can do this by executing the following command: <code>notepad.exe simple.txt:MyHiddenStream</code>
-![Secret text](/assets/images/ads-6-42.png)
+![Secret text](/assets/images/42.png)
 
 
 ### What about storing executables in Alternate Data Streams?
@@ -54,7 +51,7 @@ To read the file in one read operation, we have set a readcount of 0. The Get-Co
 
 In order to launch the hidden executable, we can launch it via wmic as follows:<br><code>wmic process call create C:\Users\Joshua\Desktop\0\adsdemo\simple.txt:exestream</code><br>
 And, as we can see, the calculator pops up:
-![Running calc.exe from ADS](/assets/images/ads-7-calc.png)
+![Running calc.exe from ADS](/assets/images/calc.png)
 <br>
 
 ## How to find and remove Alternate Data Streams
