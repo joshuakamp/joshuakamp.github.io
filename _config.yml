@@ -106,6 +106,7 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
+      words_per_minute: 180
       comments: false
       share: false
       related: true
