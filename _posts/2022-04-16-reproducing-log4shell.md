@@ -38,9 +38,9 @@ Once the static IP addresses are configured, make sure that both VM's can ping e
 
 ## Setting things up on VM1 (Windows 11 OS)
 Apache Solr requires Java Runtime Environment (JRE) version 1.8 or higher in order to run. In this blog post we will use JDK 1.8.0_181. You can download it from the official Oracle website, but this will require you to sign up for an account first. You can also use a download mirror, such as:
-https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-windows-x64.exe
+[https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-windows-x64.exe](https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-windows-x64.exe)
 
-After installing JDK 1.8.0_181 on your VM, download Solr 7.7.3 from https://solr.apache.org/downloads.html and unzip the file. Now open a new commandprompt and navigate to the directory in order to launch the application. I've unzipped Solr on my Desktop, so I will cd into ```C:\Users\User\Desktop\solr-7.7.3a\solr-7.7.3\bin``` and run the ```solr start``` command:<br>
+After installing JDK 1.8.0_181 on your VM, download Solr 7.7.3 from [https://solr.apache.org/downloads.html](https://solr.apache.org/downloads.html) and unzip the file. Now open a new commandprompt and navigate to the directory in order to launch the application. I've unzipped Solr on my Desktop, so I will cd into ```C:\Users\User\Desktop\solr-7.7.3a\solr-7.7.3\bin``` and run the ```solr start``` command:<br>
 ![solrstart.png](/assets/images/solrstart.png)<br>
 
 With the Solr server running, open your web browser and browse to [http://127.0.0.1:8983/](http://127.0.0.1:8983/). You should be presented with a dashboard that looks something like this:<br>
@@ -64,7 +64,7 @@ public class Exploit {
 
 This payload is quite simple and harmless. All it does is put the text "Hello!" into a file called "Log4Shelldemo.txt".
 
-Our payload needs to be compiled using the same Java version as the application that we're exploiting, so go ahead and download the Linux version of JDK 1.8.0_181 onto VM2 (mirror: https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.tar.gz). Extract it using the ```tar -xvzf jdk-8u181-linux-x64.tar.gz``` command. <br> Now compile the payload by running ```./jdk1.8.0_181/bin/javac /tmp/demo/Exploit.java```:<br>
+Our payload needs to be compiled using the same Java version as the application that we're exploiting, so go ahead and download the Linux version of JDK 1.8.0_181 onto VM2 (mirror: [https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.tar.gz](https://mirrors.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-x64.tar.gz)). Extract it using the ```tar -xvzf jdk-8u181-linux-x64.tar.gz``` command. <br> Now compile the payload by running ```./jdk1.8.0_181/bin/javac /tmp/demo/Exploit.java```:<br>
 ![compilepayload.png](/assets/images/compilepayload.png)<br>
 This should result in a file called Exploit.class in our /tmp/demo directory:<br>
 ![exploitclass.png](/assets/images/exploitclass.png)<br>
