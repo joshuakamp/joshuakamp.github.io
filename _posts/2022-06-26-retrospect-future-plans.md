@@ -42,6 +42,7 @@ This was another learning experience for me, as it was my first "real" job inter
 
 ### Domain
 I've purchased a pretty cool domain name recently, and when the time is right I will transfer this blog over to my newly acquired domain. More information on this will be out soonTM.<br>
+**Update:** The blog has been transferred over to [https://malwarepenguin.com](https://malwarepenguin.com) on July 10th, 2022.
 
 ## Future plans
 ### Malware analysis
