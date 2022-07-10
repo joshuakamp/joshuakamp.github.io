@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 logo: "/assets/images/favicon.png"
-title: Joshua's blog
-email: joshuakamp@duck.com
+title: "MalwarePenguin - Blog"
+email: joshua@malwarepenguin.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Information Security blog about Digital Forensics, Malware Analysis, Reverse Engineering and other cool things.
+  Yet another blog about malware analysis and other cool things.
 # twitter_username: username
 # github_username: username
 minimal_mistakes_skin: contrast # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -59,11 +59,11 @@ plugins:
 author:
   name   : "Joshua Kamp"
   #avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Hi there. I'm an InfoSec student with a strong interest in Digital Forensics, Malware Analysis and Reverse Engineering. In this blog you will find posts related to these topics and other cool things that I've learned. Welcome!"
+  bio    : "Hi there. <br> <br> I'm an InfoSec student with a strong interest in DFIR, Malware Analysis and Reverse Engineering. <br> In this blog you will find posts related to these topics and other cool things that I've learned. <br> <br> Welcome!"
   links:
-    - label: "joshuakamp@duck.com"
+    - label: "joshua@malwarepenguin.com"
       icon: "fas fa-fw fa-at"
-      url: mailto:joshuakamp@duck.com
+      url: mailto:joshua@malwarepenguin.com
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/j-shua/"
@@ -82,9 +82,9 @@ author:
 
 footer:
   links:
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/j-shua/"
+    - label: "Home"
+      icon: "fas fa-home"
+      url: "/"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
