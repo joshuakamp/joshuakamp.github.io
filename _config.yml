@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 logo: "/assets/images/favicon.png"
 title: "MalwarePenguin - Blog"
-email: joshua@malwarepenguin.com
+email: joshua[at]malwarepenguin.com
 description: >- # this means to ignore newlines until "baseurl:"
   Yet another blog about malware analysis and other cool things.
 # twitter_username: username
@@ -61,7 +61,7 @@ author:
   #avatar : "/assets/images/bio-photo.jpg"
   bio    : "Hi there. <br> <br> I'm an InfoSec student with a strong interest in DFIR, Malware Analysis and Reverse Engineering. <br> In this blog you will find posts related to these topics and other cool things that I've learned. <br> <br> Welcome!"
   links:
-    - label: "joshua@malwarepenguin.com"
+    - label: "joshua[at]malwarepenguin.com"
       icon: "fas fa-fw fa-at"
       url: ""
     - label: "Linkedin"
