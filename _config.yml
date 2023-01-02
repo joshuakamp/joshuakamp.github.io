@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Joshua Kamp"
   #avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Hi there. <br> <br> I'm an InfoSec student with a strong interest in DFIR, Malware Analysis and Reverse Engineering. <br> In this blog you will find posts related to these topics and other cool things that I've learned. <br> <br> Welcome!"
+  bio    : "Hi there. <br> <br> I'm a part-time SOC analyst and full-time InfoSec student with a strong interest in DFIR, Malware Analysis and Reverse Engineering. <br> In this blog you will find posts related to these topics and other cool things that I've learned. <br> <br> Welcome!"
   links:
     - label: "joshua[at]malwarepenguin.com"
       icon: "fas fa-fw fa-at"
