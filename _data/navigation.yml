@@ -1,3 +1,7 @@
 main:
-  - title: "POSTS BY TAG"
-    url: /tags/
+#  - title: "POSTS BY TAG"
+#    url: /tags/
+  - title: "About me"
+    url: /about/
+  - title: "Posts by year"
+    url: /year-archive/
